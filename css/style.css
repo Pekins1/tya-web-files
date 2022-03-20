@@ -97,11 +97,11 @@ p{
     position:absolute;
     list-style: none;
     padding: .8rem 2rem .8rem 0;
-    border: ;
+    /* background:rgba(255, 255, 255, 0.8); */
 }
-.dropdown-list:hover{
+/* .dropdown-list:hover{
     
-}
+} */
 .dropdown .fa-solid{
     padding-left: .5rem;
     color:inherit;

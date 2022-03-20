@@ -26,16 +26,25 @@
     <title>TYA Association</title>
 </head>
 <body>
-    <section id="main">
+  
         <div class="container">
             <nav class="nav">
                 <div class="content">
+                    <img src="img/logo.svg" alt="TYA-LOGO">
                     <a href="#" class="nav__logo">together for youth association</a>
                 </div>
                 <div class="content">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="index.html" class="nav__link">home</a></li>
-                        <li class="nav__item"><a href="about_us.html" class="nav__link">about us</a></li>
+                        <li class="nav__item dropdown">
+                            <a href="about_us.html" class="nav__link ">about us<i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown-item">
+                                <li class="dropdown-list"><a href="#" class="dropdown-link">who we are</a></li>
+                                <li class="dropdown-list"><a href="#" class="dropdown-link">what we do</a></li>
+                                <li class="dropdown-list"><a href="#" class="dropdown-link">our team</a></li>
+                                <li class="dropdown-list"><a href="#" class="dropdown-link">gallery</a></li>
+                            </ul>
+                        </li>
                         <li class="nav__item"><a href="activities.html" class="nav__link">activities</a></li>
                         <li class="nav__item"><a href="get_involved.html" class="nav__link">get involved</a></li>
                         <li class="nav__item"><a href="contact_us.html" class="nav__link">contact us</a></li>
@@ -43,13 +52,56 @@
                 </div>
             </nav>
         </div>
+    
 
+
+    <section id="banner">
         <div class="banner">
-            <h1>About us</h1>
+            <h1>Who we are</h1>
         </div>
     </section>
 
-    section#
+    
+
+
+    <section id="main_content">
+        <div class="about_us_content">
+            <div class="about_us_image">
+                <img class="about_image" src="img/counceling.jpg" alt="image of member">
+            </div>
+            <div class="about_us_info">
+                <div class="about_tya">
+                    <h2>ABOUT Together for Youth association</h2>
+                    <p>
+                    TYA is an independent and non discriminatory charity organisation. For over 6 years today
+                    Together for Youths A. Has been joining hands with youths all over Africa to create impact in our
+                    communities. We support and empower everyone affected by or at risk of sexual abuse and rape. We support
+                    everyone regardless of Age, Marital Status, Gender Identity, sexual orientation.
+                    </p>
+                </div>
+                
+                <div class="goal">
+                    <h2>our goal</h2>
+                    <p>
+                        Our goal is to work with hundreds of students in schools, youth clubs and other settings on
+                        creative projects that would help them to gain new skills and build confidence as well as
+                        learning how to stay safe. We will be training teachers, youth leaders and other
+                        professionals in child protection and safeguarding and enable them to understand and
+                        work with children and young people.
+                    </p>
+                </div>
+                <div class="mission">
+                    <h2>our mission</h2>
+                    <p> 
+                    Our Mission is To provide specialist, tailored support for anyone affected by or at
+                    risk of sexual abuse and rape.
+                    </p>       
+                </div>
+                 
+            </div>
+        </div>
+
+    </section>
 
 
 
@@ -103,6 +155,8 @@
 
         </footer>
     </section>
+
+    <script src="js/script-secondary.js"></script>
 
 </body>
 </html>
