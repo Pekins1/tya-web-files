@@ -12,6 +12,7 @@
 }
 h1,h2,h3{
     font-family: 'Montserrat',serif !important;
+   
 }
 p{
     font-family: 'Roboto',serif !important;
@@ -96,7 +97,7 @@ p{
     position:absolute;
     list-style: none;
     padding: .8rem 2rem .8rem 0;
-    /* background:rgba(255, 255, 255, 0.8); */
+    background: var(--background)
 }
 /* .dropdown-list:hover{
     
@@ -133,13 +134,15 @@ p{
 }
 
 
-/* these area contains all the code for the about us page */
+/* these area contains all the code for the about us/ who_we_are page */
 #main_content{
     height: auto;
     width: 100%;
 }
 .about_us_content{
-    margin: 0 6rem;
+    --color:#167037;
+    --transform: uppercase;
+    --padding-bottom: 1rem;
 }
 .about_us_image{
     text-align:center;
@@ -151,52 +154,38 @@ p{
     height: 300px;
     width: 300px;
 }
+.about_us_header{
+    padding-bottom: var(--padding-bottom);
+    color: var(--color);
+    text-transform: var(--transform);
+}
 .about_tya{
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    padding:  6rem;
 }
 .about_tya h2{
     font-size: 2rem;
     text-align: center;
-    padding-bottom: 1rem;
+    padding: 0 20rem;
 }
 
 .about_tya p{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 1rem;
 }
 
-.goal{
-    margin-left:40%;
-    padding-bottom: 1.5rem;
-}
-.goal h2{
-    font-size: 2rem;
-    text-align: right;
-    padding-bottom: 1rem;
-}
-
-.goal p{
-    text-align: right;
-    font-size: 1.2rem;
-}
-.mission{
-    margin-right:40%;
-    padding-bottom: 1.5rem;
-}
-.mission h2{
-    font-size: 2rem;
-    text-align: left;
-    padding-bottom: 1rem;
-}
-
-.mission p{
-    text-align: left;
-    font-size: 1.2rem;
+.about_us_grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    background:#f4f4f4;
+    padding: 6rem;
 }
 
 
-
+/* this area contains code for about us/ what_we_do page */
 
 
 
