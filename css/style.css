@@ -97,7 +97,7 @@ p{
     position:absolute;
     list-style: none;
     padding: .8rem 2rem .8rem 0;
-    /* background:rgba(255, 255, 255, 0.8); */
+    background: var(--background)
 }
 /* .dropdown-list:hover{
     
