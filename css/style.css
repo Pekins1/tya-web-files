@@ -351,7 +351,10 @@ p{
     transform: translateY(-290px);
     /* padding: 20px 0; */
 }
-
+.icon img{
+    height: 60px;
+    width: 60px;
+}
 
 /* about tya section */
 
@@ -588,12 +591,7 @@ p{
     padding: 40px 0 90px 22px;
     line-height: 1.6;
 }
-.donate-info .fas{
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #167037; 
-}
+
 
 .dnt-btn{
     padding: 1em 3em;
@@ -639,7 +637,7 @@ p{
     left: -20px;
     z-index: 10;
 }
-.button-border .fas{
+.button-border .fa{
     display: grid;
     place-content: center;
     height: 100%;

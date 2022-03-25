@@ -124,10 +124,11 @@ p{
     height: 60vh;
     width: 100%;
     background: rgba(0,0,0,.8);
-    color: #167037;
+    color: #fff;
     text-align: center;
     display: grid;
     place-content: center;
+    text-transform: uppercase;
 }
 .banner h1{
     font-size: 3em;
@@ -163,6 +164,7 @@ p{
     text-align: center;
     padding-bottom: 3rem;
     padding:  6rem;
+    line-height: 1.5;
 }
 .about_tya h2{
     font-size: 2rem;
@@ -182,6 +184,12 @@ p{
     grid-template-columns: repeat(2,1fr);
     background:#f4f4f4;
     padding: 6rem;
+    line-height:1.5;
+}
+.about_us_grid img{
+    height: 80px;
+    width: 80px;
+    margin: 2rem;
 }
 
 
@@ -197,37 +205,47 @@ p{
 
 .paragraph_one{
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 6rem;
+    line-height: 1.5;
 }
-
+.paragraph_one p{
+    text-transform: uppercase;
+    font-size:1.2rem;
+    font-weight:500;
+}
 .paragraph_one .header{
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     font-size: 1.7rem;
     color: var(--color);
     text-transform: var(--transform);
 }
 
-.how_we_help_grid{
+.our_programs{
     display: grid;
     gap: 2rem;
     grid-template-columns:repeat(2,1fr);
-    margin: 2rem 6rem;
+    margin: 3rem 6rem;
 }
-.how_we_help_grid .header{
+.our_programs .header{
     font-size:1.5rem;
     padding-bottom: 1rem;
     color: var(--color);
     text-transform: var(--transform);
 }
-.how_we_help_grid .paragraph{
+.our_programs .paragraph{
     padding: var(--padding);
     text-align: left;
     padding-right: 3rem;
     line-height: 1.5;
     font-size: 1.1rem;
 }
-
-
+.our_programs .paragraph .fa-solid{
+    font-size: 2rem;
+}
+.our_programs .paragraph img{
+    height:80px;
+    width: 80px;
+}
 
 
 
