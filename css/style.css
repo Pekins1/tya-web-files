@@ -395,23 +395,31 @@ p{
     line-height: 1.5;
     padding-bottom: 6rem;
 }
-.about-tya-learn-more{
+
+
+/****************** this button design affects 
+all the buttons in the home page ********/
+
+
+.buttons-design{
+    padding: 1rem 2rem;
+    background: rgba(255,255,255, .5);
+    border: 2px solid #333;
+    border-radius: 5px;
     text-transform: uppercase;
-    margin-top: 4rem;
-    padding: 1rem 3rem;
-    background:#167037;
-    border: 1px solid #064232;
-    border-radius: 30px;
-    color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
+    margin-top: 1.2rem;
+    transition: ease-in-out 300ms;
 }
-.about-tya-learn-more:hover{
-    background: #fff;
+.buttons-design a{
+    text-decoration: none;
     color: #167037;
-    transition: all .5s ease-in-out;
+   
+}
+.buttons-design:hover {
+    padding: 1.2rem 2.2rem;
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.9);
 }
 /* EVENTS */
 /* this section of code is for the event section */
@@ -546,110 +554,44 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 600px;
+    height: 500px;
     width: 100%;
+    position: relative;
 }
 
 .cta{
-    position: relative;
-    margin: 0 6rem;
-    /* width: 90%; */
-    height: 100%; 
-}
-
-.donate{
-    width: 350px;
-    height: 490px;
-    position: absolute;
-    right: 0;
-    bottom: 50px;
-}
-
-.donate-style{
-    background: #f7f7f7;
-    border: #105c2a solid 3px;
-    text-align: center;
-    padding: 30px 30px;
-    width: 450px;
-    overflow: hidden;
-    box-shadow:-8px 8px 8px #167037;
-
-  
-
-}
-.cta-headers{
-    border-bottom: #105c2a solid 3px;
-    padding-bottom: 1.3rem;
-    text-transform: uppercase;
-    font-size: 2em;
-    font-weight: 600;
-
-}
-.donate-info p{
+    padding: 6rem 0;
     text-align: left;
-    font-size: 1.2em;
-    padding: 40px 0 90px 22px;
-    line-height: 1.6;
-}
-
-
-.dnt-btn{
-    padding: 1em 3em;
-    border: 2px solid #105c2a;
-    border-radius: 50px;
-    cursor: pointer;
-    background: transparent;
-    text-transform: capitalize;
-    position: relative;
-    left: -180px;
-    bottom: 0;
-    transition: all .5s ease-in-out;
-}
-.dnt-btn a{
-    text-decoration: none;
-    color: #105c2a;
-    font-size: 1em;
-    font-weight:600;
-}
-.dnt-btn:hover {
-    color: #fff;
-    background: #105c2a;
-    border: 2px solid #8CC152;
-    transition: all .5s ease-in-out;
-}
-.dnt-btn:hover a{
-    color: #fff;
-}
-.donate-style:hover .dnt-btn {
-    transform: translateX(300px);
-   
-}
-.donate-button{
-    display: flex;
-    height: 60px;
-}
-.button-border{
-    width: 80px;
-    height:60px;
-    background:#f7f7f7;
-    border-right:3.2px solid #105c2a;
+    width: 40%;
     position: absolute;
-    left: -20px;
-    z-index: 10;
+    right: 6rem;
 }
-.button-border .fa{
-    display: grid;
-    place-content: center;
-    height: 100%;
-    font-size: 1rem;
-    color: #167037;
-    padding-left: 20px;
+.donate-info .icon img{
+    position: absolute;
+    right: 10rem;
+    top:7rem;
+}
+.cta-header{
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: rgba(0,0,0,.7);
+    text-align: left;
+}
+.cta p{
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    color:rgba(0, 0, 0, 0.7);
+    text-align: left;
 }
 
-/* contact us */
+
+
+/**************************
+****** contact us ************
+*************/
 
 #contact-us{
-    height: 600px;
+    height: 400px;
     width: 100%;
     /* background: #8CC152; */
 
@@ -686,11 +628,11 @@ p{
     height: 100%; 
     background: #f7f7f7;
     border-left: 100px solid #167037;
-    border-bottom: 600px solid transparent;
+    border-bottom: 400px solid transparent;
     box-sizing: border-box;
 }
 .contact-us-content-container{
-    margin: 13rem 6rem 0 5rem;
+    margin: 7rem 6rem 0 5rem;
 }
 .contact-us-details{
     font-size: 1.5rem;
@@ -708,53 +650,45 @@ p{
   /* cta-two Volunteer */
 
 #cta-two{
+    box-sizing: border-box;
+    background-image: url(../img/TYA1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     height: 500px;
     width: 100%;
-    margin: 0;
-}
-.volunteer{
-    background-image: url(../img/TYA1.jpg);
-    background-size: cover;
-    background-position:top center ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
+    display: grid;
+    place-content: center;
+    position: relative;
+    padding: 1rem 6rem;
 }
 
-.volunteer-info{
-    padding: 7.5rem 6rem;
+.cta-two{
+    padding: 4rem 45rem 4rem 1.2rem;
     text-align: left;
-    color: #fff;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.4);
 }
-.volunteer-header{
-    font-size: 2rem;
-    color: #167037;
-    margin-bottom: 1.2rem;
+
+.volunteer-header .icon img{
+    position: absolute;
+    right: 60rem;
+    top: 7.6rem;
 }
-.volunteer-header .fas{
-    color: #fff;
+
+.cta-two-header{
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: rgba(0,0,0,.7);
+    text-align: left;
 }
-.volunteer-info-important{
-    font-size: 1.5rem;
-    margin-right: 20rem;
-    margin-bottom: 1.2rem;
+.cta-two p{
+    padding:1.2rem 0;
+    font-size: 1.4rem;
+    color:rgba(0, 0, 0, 0.7);
+    text-align: left;
 }
-.volunteer-button button{
-    padding: 1rem 3rem;
-    background:#167037;
-    border: 1px solid #064232;
-    border-radius: 30px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-}
-.volunteer-button button:hover{
-    background: #fff;
-    color: #167037;
-    transition: all .5s ease-in-out;
-}
+
 
 /*  news updates */
 
@@ -762,7 +696,10 @@ p{
 
 /* news update code goes above */
 
+
 /* footer */
+
+
 
 #footer{
     background-color: rgba(0,0,0,.8);
