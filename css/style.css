@@ -11,12 +11,13 @@
     padding: 0;
     overflow: hidden;
 }
-h1,h2,h3{
+h1,h2,h3,.nav,#footer{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
    
 }
 p{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-size: 1.2rem !important; */
  }
 .main__content{
     height:100vh;
@@ -40,9 +41,8 @@ p{
     top:0;
     left:0;
     right: 0;
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
+    display:grid;
+    grid-template-columns:repeat(3,350px 600px 400px);
     padding:1em 6em ;
     width:100%;
     color: var(--text);
@@ -52,40 +52,86 @@ p{
 }
 .nav .content{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: center;  
 }
+
 .nav .content img{
     height: 80px;
-    width:100px;
-    
+    width:100px; 
+}
+.nav .content_primary{
+    justify-content: center;
+}
+.content strong{
+    font-size: 1.4rem;
+    color: #1da74f;
+}
+.content span{
+    font-size:smaller;
+}
+.filter_image{
+    filter: invert(33%) sepia(18%) saturate(1780%) hue-rotate(89deg) brightness(96%) contrast(91%);
 }
 
 .nav__logo{
     text-decoration: none;
     text-transform: uppercase;
     color:inherit;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-    font-size: 1.5rem;
-    word-spacing: .2rem;
+    font-size: 1.2rem;
+    word-spacing: .1rem;
+    text-align: left;
+    width:min-content;
+
 }
 .nav__list{
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1rem;
     list-style: none;
-    justify-content: flex-end;
-    
+    justify-content: center;
+    font-weight: 500;
 }
 .nav__item{
     margin-right: 1em;
+    padding: 1rem 0;
 }
 
 .nav__link{
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     color:inherit;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight:600;
 }
+
+.nav_contact{
+    display: flex;
+    align-items: center;
+    font-size: .9rem !important;
+    font-family: 'Fjalla One',sans;
+    font-weight: 700;
+    cursor: pointer;
+}
+.nav_contact p{
+    margin-right: 1.5rem;
+    width: min-content;
+    line-height:1;
+}
+
+.contact_adress a{
+    text-decoration: none;
+    color: #1d974a;
+   
+}
+.contact_adress a:hover{
+    color: #2dd46b;
+}
+.contact_adress{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    gap: .7rem;
+}
+
 .nav__scrolled{
     --text: #333;
     --text-inverse: #f4f4f4;
@@ -93,16 +139,22 @@ p{
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
 .dropdown-item{
-    width: 180px;
+    width: 200px;
+    height: 200px;
     display:none;
+    margin-top: 1rem;
+    padding-top: 1.5rem ;
     position:absolute;
     list-style: none;
-    padding: .8rem 2rem .8rem 0;
-    background: var(--background)
+    background: var(--background);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
-/* .dropdown-list:hover{
-    
-} */
+.dropdown-list{
+    padding: .5rem 2rem .5rem 1.3rem;
+}
+.dropdown-list:hover{
+    background-color: rgba(22, 112, 55,.4);;
+}
 .dropdown .fa-solid{
     padding-left: .5rem;
     color:inherit;
@@ -111,11 +163,15 @@ p{
     text-decoration: none;
     color:inherit;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: .8rem;
+    font-weight: 600;
 }
 .dropdown:hover .dropdown-item{
     display: block;
 }
+/* **************** navigation design code ends here ********************************** */
+
+/* **************** carrusel design code begins here ********************************** */
 .slider{
     position:relative;
     overflow:hidden;
