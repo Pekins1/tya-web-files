@@ -248,6 +248,60 @@ p{
 }
 
 
+/* heading description(what we do) */
+
+
+.about-us-description{
+    padding: 10px;
+    margin: 10px;
+    word-spacing: 4px;
+    margin-top: 40px;
+    font-size: small;
+}
+.what-we-do-images{
+    width: 378px;
+    height: 283px;
+    object-fit: cover;
+}
+#what-we-do-main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* width: 100%; */
+    /* min-height: 100vh; */
+
+}
+.what_we_do_grid{
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+}
+.counselling{
+    padding: 20px;
+    margin-top: 20px;
+
+}
+.support{
+    padding: 20px;
+    margin-top: 20px;
+}
+.education{
+    padding: 20px;
+    margin-top: 20px;
+}
+.contents{
+    word-spacing: 5px;
+    margin-top: 15px;
+    font-style: oblique;
+}
+.what_we_do_header{
+    color: #167037;
+
+}
+
+
 
 
 
