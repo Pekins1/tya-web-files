@@ -2,7 +2,7 @@ const container = document.querySelector(".nav");
 const sectionOne = document.querySelector(".banner");
 
 const sectionOneOptions = {
-  rootMargin: "-400px 0px 0px 0px"
+  rootMargin: "-200px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(
