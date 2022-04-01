@@ -4,15 +4,37 @@
     padding: 0;
     max-width: 100%;
 }
-
 #main{
     position: relative;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
+h1,h2,h3{
+    font-family:"Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+   
+}
+p{
+    font-family: 'Roboto',serif !important;
+}
+.main__content{
+    height:100vh;
+    width:100vw;
+    font-family: 'Playfair Display',sans-serif;
+    background:#333;
+    color:#fff;
+    line-height: 1.6;
+    overflow: hidden;
+}
 
+.container{
+    --text: #fff;
+    --text-inverse:#333;
+    --background: transparent;
+}
 .nav{
+   
+    background: var(--background);
     position:fixed;
     top:0;
     left:0;
@@ -20,16 +42,28 @@
     display:flex;
     justify-content: space-between;
     align-items:center;
-    padding:2em 6em ;
+    padding:1em 6em ;
     width:100%;
-    z-index: 1;
+    color: var(--text);
+    transition: background 250ms ease-in;
+    z-index: 100;
 
+}
+.nav .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .content img{
+    height: 80px;
+    width:100px;
+    
 }
 
 .nav__logo{
     text-decoration: none;
     text-transform: uppercase;
-    color:#fff;
+    color:inherit;
     font-family: 'Roboto',sans-serif;
     font-size: 1.5rem;
     word-spacing: .2rem;
@@ -47,40 +81,171 @@
 
 .nav__link{
     font-family: 'Roboto',sans-serif;
-    color:#fff;
+    color:inherit;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: uppercase;
+}
+.nav__scrolled{
+    --text: #333;
+    --text-inverse: #f4f4f4;
+    --background: #f4f4f4;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+.dropdown-item{
+    width: 180px;
+    display:none;
+    position:absolute;
+    list-style: none;
+    padding: .8rem 2rem .8rem 0;
+    background: var(--background)
+}
+/* .dropdown-list:hover{
+    
+} */
+.dropdown .fa-solid{
+    padding-left: .5rem;
+    color:inherit;
+}
+.dropdown-link{
+    text-decoration: none;
+    color:inherit;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+.dropdown:hover .dropdown-item{
+    display: block;
 }
 
+#banner{
+    position:relative;
+
+}
 .banner{
-    height: 40vh;
+    height: 60vh;
     width: 100%;
     background: rgba(0,0,0,.8);
-    color: #167037;
+    color: #fff;
     text-align: center;
     display: grid;
     place-content: center;
+    text-transform: uppercase;
 }
 .banner h1{
     font-size: 3em;
 }
 
 
+/* these area contains all the code for the about us/ who_we_are page */
+#main_content{
+    height: auto;
+    width: 100%;
+}
+.about_us_content{
+    --color:#167037;
+    --transform: uppercase;
+    --padding: 1rem;
+}
+.about_us_image{
+    text-align:center;
+    height:400px;
+    display:grid;
+    place-content:center;
+}
+.about_image{
+    height: 300px;
+    width: 300px;
+}
+.about_us_header{
+    padding-bottom: var(--padding);
+    color: var(--color);
+    text-transform: var(--transform);
+}
+.about_tya{
+    text-align: center;
+    padding-bottom: 3rem;
+    padding:  6rem;
+    line-height: 1.5;
+}
+.about_tya h2{
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 20rem;
+}
+
+.about_tya p{
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.about_us_grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    background:#f4f4f4;
+    padding: 6rem;
+    line-height:1.5;
+}
+.about_us_grid img{
+    height: 80px;
+    width: 80px;
+    margin: 2rem;
+}
 
 
+/* this area contains code for about us/ what_we_do page */
 
+.content_area{
+    width: 100%;
+    --color:#167037;
+    --transform: uppercase;
+    --padding: 1rem;
+    margin: 4rem 0;
+}
 
+.paragraph_one{
+    text-align: center;
+    padding: 2rem 6rem;
+    line-height: 1.5;
+}
+.paragraph_one p{
+    text-transform: uppercase;
+    font-size:1.2rem;
+    font-weight:500;
+}
+.paragraph_one .header{
+    padding-top: 2.5rem;
+    font-size: 1.7rem;
+    color: var(--color);
+    text-transform: var(--transform);
+}
 
-
-
-
-
-
-
-
-
-
-
+.our_programs{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns:repeat(2,1fr);
+    margin: 3rem 6rem;
+}
+.our_programs .header{
+    font-size:1.5rem;
+    padding-bottom: 1rem;
+    color: var(--color);
+    text-transform: var(--transform);
+}
+.our_programs .paragraph{
+    padding: var(--padding);
+    text-align: left;
+    padding-right: 3rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+.our_programs .paragraph .fa-solid{
+    font-size: 2rem;
+}
+.our_programs .paragraph img{
+    height:80px;
+    width: 80px;
+}
 
 
 
@@ -92,10 +257,7 @@
 
 #footer{
     background-color: rgba(0,0,0,.8);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+ 
 
 }
 .footer-logo{
@@ -116,7 +278,7 @@
 .footer-container-contact{
     display: flex;
     flex-direction: column;
-    /* padding-top: 1rem; */
+   
 }
 .footer-contact-link{
     padding-top: 1rem;
