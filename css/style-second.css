@@ -20,9 +20,9 @@ p{
 
 
 .container{
-    --text: #fff;
-    --text-inverse:#333;
-    --background: rgba(0,0,0,.9);
+    --text: #333;
+    --text-inverse: #f4f4f4;
+    --background: #f4f4f4;
 }
 .nav{
    
@@ -89,7 +89,7 @@ p{
     text-decoration: none;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight:600;
+    font-weight:700;
 }
 
 .nav_contact{
@@ -168,7 +168,7 @@ p{
 .banner{
     height: 40vh;
     width: 100%;
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0,.7);
     color: #fff;
     text-align: center;
     display: grid;
@@ -238,7 +238,7 @@ p{
 }
 
 
-/* this area contains code for about us/ what_we_do page */
+/* this area contains code for about us/how we help  page */
 
 .content_area{
     width: 100%;
@@ -255,7 +255,7 @@ p{
 }
 .paragraph_one p{
     text-transform: uppercase;
-    font-weight:500;
+    font-weight:600;
 }
 .paragraph_one .header{
     padding-top: 2.5rem;
@@ -292,12 +292,61 @@ p{
 }
 
 
+/* *********************************
+**** this area contains code for the about us/teams page******
+*************************** */
+
+#team{
+    margin: 4rem 6rem;
+}
+.teams_grid{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-content: center;
+    gap: 5rem;
+}
+.team_img{
+    height:350px;
+    width:350px;
+    overflow: hidden;
+}
+.team_bio{
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.team_info{
+    text-align: center;
+    margin-top: 1rem;
+    height: 100px;
+    width: 350px; 
+}
+.team_name{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: .5rem;
+}
+.team_info a{
+    text-decoration: none;
+    color: black;
+}
+.team_post{
+    font-weight: 600;
+    color:#167037;
+}
+.line_design{
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    margin: 1.5rem 7rem 0 7rem;
+}
 
 
 
 
-
-/*************************************** footer section *********************************/
+/*********************************
+****** footer section ************
+*********************/
 
 #footer{
     background-color: rgba(0,0,0,.9);
