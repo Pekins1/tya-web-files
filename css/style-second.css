@@ -89,7 +89,7 @@ p{
     text-decoration: none;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight:700;
+    font-weight:600;
 }
 
 .nav_contact{
@@ -137,6 +137,9 @@ p{
     background: var(--background);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
+.dropdown-item.two{
+    height: 120px;
+}
 .dropdown-list{
     padding: .5rem 2rem .5rem 1.3rem;
 }
@@ -180,17 +183,21 @@ p{
     font-size: 2.5em;
 }
 
-
+:root{
+    --color:#167037;
+    --transform: uppercase;
+    --padding: 1rem;
+}
 /* these area contains all the code for the about us/ who_we_are page */
 #main_content{
     height: auto;
     width: 100%;
 }
-.about_us_content{
+/* .about_us_content{
     --color:#167037;
     --transform: uppercase;
     --padding: 1rem;
-}
+} */
 .about_us_image{
     text-align:center;
     height:400px;
@@ -341,8 +348,95 @@ p{
     margin: 1.5rem 7rem 0 7rem;
 }
 
+/* activities page  */
 
+#activities{
+    margin: 4rem 6rem;
+    
+}
 
+.activities_top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
+    grid-template-areas: 'one three' 'two three';
+    gap: 2rem;
+    padding-left: 15rem;
+}
+.activities_top .one{
+    grid-area: one;
+    padding-top: 2rem; 
+}
+.activities_top .two{
+    grid-area: two;
+    
+}
+.activities_top .three{
+    grid-area: three;
+    height: 300px;
+    width: 300px;
+}
+.icon{
+    height: 80px;
+    width: 80px;
+    margin-left:50%;
+    transform:translateX(-50%);
+}
+.activities_header{
+    padding-bottom: var(--padding);
+    color: var(--color);
+    text-transform: var(--transform);
+    text-align: center;
+}
+
+.activities_bottom{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    /* place-tems: center; */
+    /* text-align: center; */
+    grid-template-areas:
+    'act0 act0 act0 act0'
+    '. act1 act2 .'
+    '. act3 act4 .'
+    '. act5 act6 .'
+    '. act7 act7 .'
+   
+}
+.act0{
+    grid-area: act0;
+    padding: 4rem 0;
+    color: #064232;
+    text-transform: var(--transform);
+    font-size: 2rem;
+    text-align: center;
+}
+.act1{
+    grid-area: act1;
+}
+.act2{
+    grid-area: act2;
+}
+.act3{
+    grid-area: act3;
+}
+.act4{
+    grid-area: act4;
+}
+.act5{
+    grid-area: act5;
+}
+.act5 ul li{
+    list-style: none;
+}
+.act6{
+    grid-area: act6;
+}
+.act7{
+    grid-area: act7;
+    padding: 0 20%;
+}
 
 /*********************************
 ****** footer section ************
