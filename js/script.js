@@ -1,79 +1,77 @@
-const slides = document.querySelectorAll('.slide');
-const next = document.querySelector('#next');
-const prev = document.querySelector('#prev');
+const slides = document.querySelectorAll(".slide");
+const next = document.querySelector("#next");
+const prev = document.querySelector("#prev");
 const auto = true;
 const intervalTime = 7000;
 let slideInterval;
 
 const nextSlide = () => {
-    // Get current class
-    const current = document.querySelector('.current');
-    // Remove current class
-    current.classList.remove('current');
-    // Check for next slide
-    if (current.nextElementSibling){
-        // Add current to next sibling
-        current.nextElementSibling.classList.add('current');
-    }
-    else {
-        // Add current to start
-        slides[0].classList.add('current');
-    }
-    setTimeout(() => current.classList.remove('current'));
-}
+  // Get current class
+  const current = document.querySelector(".current");
+  // Remove current class
+  current.classList.remove("current");
+  // Check for next slide
+  if (current.nextElementSibling) {
+    // Add current to next sibling
+    current.nextElementSibling.classList.add("current");
+  } else {
+    // Add current to start
+    slides[0].classList.add("current");
+  }
+  setTimeout(() => current.classList.remove("current"));
+};
 const prevSlide = () => {
-    // Get current class
-    const current = document.querySelector('.current');
-    // Remove current class
-    current.classList.remove('current');
-    // Check for previous slide
-    if (current.previousElementSibling){
-        // Add current to previous sibling
-        current.previousElementSibling.classList.add('current');
-    }
-    else {
-        // Add current to last
-        slides[slides.length - 1].classList.add('current');
-    }
-    setTimeout(() => current.classList.remove('current'));
+  // Get current class
+  const current = document.querySelector(".current");
+  // Remove current class
+  current.classList.remove("current");
+  // Check for previous slide
+  if (current.previousElementSibling) {
+    // Add current to previous sibling
+    current.previousElementSibling.classList.add("current");
+  } else {
+    // Add current to last
+    slides[slides.length - 1].classList.add("current");
+  }
+  setTimeout(() => current.classList.remove("current"));
 };
 // Button Events
-next.addEventListener('click', e =>{
-    nextSlide();
-    if(auto){
-        clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, intervalTime);
-    }
+next.addEventListener("click", (e) => {
+  nextSlide();
+  if (auto) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
 });
-prev.addEventListener('click', e =>{
-    prevSlide();
-    if(auto){
-        clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, intervalTime);
-    }
+prev.addEventListener("click", (e) => {
+  prevSlide();
+  if (auto) {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
 });
 
 // Auto slide
-if (auto){
-    // Run next slide at interval time
-    slideInterval = setInterval(nextSlide, intervalTime);
+if (auto) {
+  // Run next slide at interval time
+  slideInterval = setInterval(nextSlide, intervalTime);
 }
-
 
 // navigation observer
 
 const container = document.querySelector(".nav");
+const containerTwo = document.querySelector(".nav__content");
 const sectionOne = document.querySelector(".main__content");
 
 const sectionOneOptions = {
-  rootMargin: "-200px 0px 0px 0px"
+  rootMargin: "-200px 0px 0px 0px",
 };
 
-const sectionOneObserver = new IntersectionObserver(function(
+const sectionOneObserver = new IntersectionObserver(function (
   entries,
   sectionOneObserver
 ) {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       container.classList.add("nav__scrolled");
     } else {
@@ -84,3 +82,14 @@ const sectionOneObserver = new IntersectionObserver(function(
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+
+// nav responsive
+
+const toggleButton = document.getElementsByClassName("toggle_button")[0];
+const navbarLinks = document.getElementsByClassName("nav__list")[0];
+const navContacts = document.getElementsByClassName("nav_contact")[0];
+
+toggleButton.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
+  navContacts.classList.toggle("active");
+});
