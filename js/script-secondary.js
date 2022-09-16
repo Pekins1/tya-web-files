@@ -2,28 +2,26 @@ const container = document.querySelector(".nav");
 const sectionOne = document.querySelector(".banner");
 
 const sectionOneOptions = {
-  rootMargin: "-200px 0px 0px 0px"
+  rootMargin: "-200px 0px 0px 0px",
 };
 
 const sectionOneObserver = new IntersectionObserver(function (
-    entries,
-    sectionOneObserver
-  ) {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        container.classList.add("nav__scrolled");
-      } else {
-        container.classList.remove("nav__scrolled");
-      }
-    });
-  },
-  sectionOneOptions);
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      container.classList.add("nav__scrolled");
+    } else {
+      container.classList.remove("nav__scrolled");
+    }
+  });
+},
+sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 
-
-
-// gallery 
+// gallery
 
 let galleryImages = document.querySelectorAll(".gallery_img");
 let getLatestOpenedImg;
@@ -35,7 +33,7 @@ if (galleryImages) {
       let getElementCss = window.getComputedStyle(image);
       let getFullImgUrl = getElementCss.getPropertyValue("background-image");
       let getImgUrlPos = getFullImgUrl.split("/img/thum/");
-      let setNewImgUrl = getImgUrlPos[1].replace('")', '');
+      let setNewImgUrl = getImgUrlPos[1].replace('")', "");
 
       getLatestOpenedImg = index + 1;
 
@@ -50,10 +48,9 @@ if (galleryImages) {
       newImg.setAttribute("src", "img/gallery/" + setNewImgUrl);
       newImg.setAttribute("id", "current_img");
 
-
       newImg.onload = function () {
         let imgWidth = this.width;
-        let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
+        let calcImgToEdge = (windowWidth - imgWidth) / 2 - 80;
 
         let newNextBtn = document.createElement("a");
         let btnNextText = document.createTextNode("Next");
@@ -61,7 +58,7 @@ if (galleryImages) {
         container.appendChild(newNextBtn);
         newNextBtn.setAttribute("class", "img_btn_next");
         newNextBtn.setAttribute("onclick", "changeImg(1)");
-        newNextBtn.style.cssText = "right: "+calcImgToEdge+ "px;";
+        newNextBtn.style.cssText = "right: " + calcImgToEdge + "px;";
 
         let newPrevBtn = document.createElement("a");
         let btnPrevText = document.createTextNode("Prev");
@@ -69,9 +66,9 @@ if (galleryImages) {
         container.appendChild(newPrevBtn);
         newPrevBtn.setAttribute("class", "img_btn_prev");
         newPrevBtn.setAttribute("onclick", "changeImg(0)");
-        newPrevBtn.style.cssText = "left: "+calcImgToEdge+ "px;";
-      }
-    }
+        newPrevBtn.style.cssText = "left: " + calcImgToEdge + "px;";
+      };
+    };
   });
 }
 
@@ -80,43 +77,40 @@ function closeImg() {
   document.querySelector(".img_btn_next").remove();
   document.querySelector(".img_btn_prev").remove();
 }
-function changeImg(changeDir){
+function changeImg(changeDir) {
   document.querySelector("#current_img").remove();
 
   let getImgWindow = document.querySelector(".img_window");
-  let newImg =document.createElement("img");
+  let newImg = document.createElement("img");
   getImgWindow.appendChild(newImg);
 
   let calcNewImg;
-  if(changeDir === 1){
+  if (changeDir === 1) {
     calcNewImg = getLatestOpenedImg + 1;
-    if(calcNewImg > galleryImages.length) {
+    if (calcNewImg > galleryImages.length) {
       calcNewImg = 1;
     }
-  }
-  else if(changeDir === 0){
-      calcNewImg = getLatestOpenedImg - 1;
-      if(calcNewImg < 1) {
-        calcNewImg = galleryImages.length;
-      }
+  } else if (changeDir === 0) {
+    calcNewImg = getLatestOpenedImg - 1;
+    if (calcNewImg < 1) {
+      calcNewImg = galleryImages.length;
+    }
   }
 
-  newImg.setAttribute("src","img/gallery/img" + calcNewImg + ".jpg");
+  newImg.setAttribute("src", "img/gallery/img" + calcNewImg + ".jpg");
   // newImg.setAttribute("src","img/gallery/img" + calcNewImg + ".png");
-  newImg.setAttribute("id","current_img");
+  newImg.setAttribute("id", "current_img");
 
   getLatestOpenedImg = calcNewImg;
-  
-  newImg.onload = function(){
+
+  newImg.onload = function () {
     let imgWidth = this.width;
-    let calcImgToEdge = ((windowWidth - imgWidth) / 2) - 80;
+    let calcImgToEdge = (windowWidth - imgWidth) / 2 - 80;
 
     let nextBtn = document.querySelector(".img_btn_next");
-    nextBtn.style.cssText = "right: "+calcImgToEdge+ "px;";
+    nextBtn.style.cssText = "right: " + calcImgToEdge + "px;";
 
     let prevBtn = document.querySelector(".img_btn_prev");
-    prevBtn.style.cssText = "left: "+calcImgToEdge+ "px;";
-
-  }
-
+    prevBtn.style.cssText = "left: " + calcImgToEdge + "px;";
+  };
 }

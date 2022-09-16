@@ -1,501 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font family -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
-      rel="stylesheet"
-    />
 
-    <script
-      src="https://kit.fontawesome.com/fc5ade1f33.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/9d641fc35f.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- styling -->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>TYA Association</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font family -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet" />
 
-  <body>
-    <div class="container">
-      <nav class="nav">
-        <div class="content">
-          <img class="filter_image" src="img/logo.svg" alt="TYA-LOGO" />
-          <a href="#" class="nav__logo"
-            ><strong>t</strong>ogether <span>for</span> <strong>y</strong>outh
-            <strong>a</strong>ssociation
-          </a>
-        </div>
-        <a href="#" class="toggle_button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+  <script src="https://kit.fontawesome.com/fc5ade1f33.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9d641fc35f.js" crossorigin="anonymous"></script>
+  <!-- styling -->
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Together for Youths Association</title>
+  <!-- <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg" /> -->
+  <link rel="icon" type="image/png" href="/img/favicon/favicon.png" />
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="content">
+        <img class="filter_image" src="img/logo.svg" alt="TYA-LOGO" />
+        <a href="#" class="nav__logo"><strong>t</strong>ogether <span>for</span> <strong>y</strong>outh
+          <strong>a</strong>ssociation
         </a>
-        <div class="content content_primary">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link">home</a>
-            </li>
-            <li class="nav__item dropdown">
-              <a href="about_us.html" class="nav__link"
-                >about us<i class="fa-solid fa-caret-down"></i
-              ></a>
-              <ul class="dropdown-item">
-                <li class="dropdown-list">
-                  <a href="about_us.html" class="dropdown-link">who we are</a>
-                </li>
-                <li class="dropdown-list">
-                  <a href="how_we_help.html" class="dropdown-link"
-                    >how we help</a
-                  >
-                </li>
-                <li class="dropdown-list">
-                  <a href="team.html" class="dropdown-link">our team</a>
-                </li>
-                <li class="dropdown-list">
-                  <a href="gallery.html" class="dropdown-link">gallery</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav__item">
-              <a href="activities.html" class="nav__link">activities</a>
-            </li>
-            <li class="nav__item dropdown">
-              <a href="get_involved.html" class="nav__link"
-                >get involved<i class="fa-solid fa-caret-down"></i
-              ></a>
-              <ul class="dropdown-item two">
-                <li class="dropdown-list">
-                  <a href="donate.html" class="dropdown-link">Donate</a>
-                </li>
-                <li class="dropdown-list">
-                  <a href="volunteer.html" class="dropdown-link">Volunteer</a>
-                </li>
-              </ul>
-            </li>
+      </div>
+      <a href="#" class="toggle_button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="content content_primary">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">home</a>
+          </li>
+          <li class="nav__item dropdown">
+            <a href="#" class="nav__link">about us<i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-item">
+              <li class="dropdown-list">
+                <a href="who_we_are.html" class="dropdown-link">who we are</a>
+              </li>
+              <li class="dropdown-list">
+                <a href="how_we_help.html" class="dropdown-link">how we help</a>
+              </li>
+              <li class="dropdown-list">
+                <a href="team.html" class="dropdown-link">our team</a>
+              </li>
+              <li class="dropdown-list">
+                <a href="gallery.html" class="dropdown-link">gallery</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="activities.html" class="nav__link">activities</a>
+          </li>
+          <li class="nav__item dropdown">
+            <a href="#" class="nav__link">get involved<i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-item two">
+              <li class="dropdown-list">
+                <a href="donate.html" class="dropdown-link">Donate</a>
+              </li>
+              <li class="dropdown-list">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvUD2AS1Q9hMZrSY0LtFDRncGkT2VNRedPJLKKDaBfngc7Sg/viewform?usp=sf_link" class="dropdown-link">Volunteer</a>
+              </li>
+            </ul>
+          </li>
 
-            <li class="nav__item">
-              <a href="contact_us.html" class="nav__link">contact us</a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav__item">
+            <a href="contact_us.html" class="nav__link">contact us</a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="contact_wrapper">
-          <div class="nav_contact">
-            <p>Contact us on</p>
-            <div class="contact_adress">
-              <a href="tel:+237676360925">+237 676 360 925</a>
-              <a href="mailto:togetherfor.youths@gmail.com"
-                >togetherfor.youths@gmail.com</a
-              >
-            </div>
+      <div class="contact_wrapper">
+        <div class="nav_contact">
+          <p>Contact us on</p>
+          <div class="contact_adress">
+            <a href="tel:+237676360925">+237 676 360 925</a>
+            <a href="mailto:togetherfor.youths@gmail.com">togetherfor.youths@gmail.com</a>
           </div>
-        </div>
-      </nav>
-    </div>
-
-    <section id="main">
-      <!-- Carousel -->
-      <div class="main__content">
-        <div class="slider">
-          <div class="slide current">
-            <div class="content one all">
-              <h1>Slide One</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                adipisci in magni, minus vel sit assumenda sapiente saepe optio
-                rerum excepturi omnis, veniam voluptas suscipit unde quos.
-                Voluptas, sint voluptatum.
-              </p>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="content two all">
-              <h1>Slide Two</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                adipisci in magni, minus vel sit assumenda sapiente saepe optio
-                rerum excepturi omnis, veniam voluptas suscipit unde quos.
-                Voluptas, sint voluptatum.
-              </p>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="content three all">
-              <h1>Slide Three</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                adipisci in magni, minus vel sit assumenda sapiente saepe optio
-                rerum excepturi omnis, veniam voluptas suscipit unde quos.
-                Voluptas, sint voluptatum.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="buttons">
-          <button id="prev"><i class="fas fa-arrow-left"></i></button>
-          <button id="next"><i class="fas fa-arrow-right"></i></button>
         </div>
       </div>
-    </section>
+    </nav>
+  </div>
 
-    <section id="programs">
-      <div class="area-heading">
-        <h2>What we do at <strong>TYA</strong></h2>
-        <br />
+  <section id="main">
+    <!-- Carousel -->
+    <div class="main__content">
+      <div class="slider">
+        <div class="slide current">
+          <div class="content one all">
+            <h1>Slide One</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              adipisci in magni, minus vel sit assumenda sapiente saepe optio
+              rerum excepturi omnis, veniam voluptas suscipit unde quos.
+              Voluptas, sint voluptatum.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content two all">
+            <h1>Slide Two</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              adipisci in magni, minus vel sit assumenda sapiente saepe optio
+              rerum excepturi omnis, veniam voluptas suscipit unde quos.
+              Voluptas, sint voluptatum.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content three all">
+            <h1>Slide Three</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              adipisci in magni, minus vel sit assumenda sapiente saepe optio
+              rerum excepturi omnis, veniam voluptas suscipit unde quos.
+              Voluptas, sint voluptatum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev"><i class="fas fa-arrow-left"></i></button>
+        <button id="next"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs">
+    <div class="area-heading">
+      <h2>What we do at <strong>TYA</strong></h2>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+        dolores, numquam incidunt nam perferendis ea voluptas, autem vero
+        doloremque aperiam, laborum sint delectus sunt molestias quidem
+        aspernatur suscipit! Dignissimos, vitae.
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col col_one">
+        <div class="top one">
+          <div class="icon">
+            <img src="img/icons/loudspeaker.png" alt="" />
+          </div>
+          <div class="header">
+            <h2>advocate</h2>
+          </div>
+        </div>
+        <div class="bottom one">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            eveniet atque suscipit itaque quas omnis alias numquam molestiae
+            voluptas. Temporibus quam quas maiores accusamus minus laborum
+            nulla fugiat natus sequi.
+          </p>
+        </div>
+      </div>
+      <div class="col col_two">
+        <div class="top two">
+          <div class="icon">
+            <img src="img/icons/meeting.png" alt="" />
+          </div>
+          <div class="header">
+            <h2>Counselling</h2>
+          </div>
+        </div>
+        <div class="bottom two">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            eveniet atque suscipit itaque quas omnis alias numquam molestiae
+            voluptas. Temporibus quam quas maiores accusamus minus laborum
+            nulla fugiat natus sequi.
+          </p>
+        </div>
+      </div>
+      <div class="col col_three">
+        <div class="top three">
+          <div class="icon">
+            <img class="icons" src="img/icons/unity.png" alt="" />
+          </div>
+          <div class="header">
+            <h2>comunity work</h2>
+          </div>
+        </div>
+        <div class="bottom three">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            eveniet atque suscipit itaque quas omnis alias numquam molestiae
+            voluptas. Temporibus quam quas maiores accusamus minus laborum
+            nulla fugiat natus sequi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--   this sectioin contains code reference for the about us page   -->
+
+  <section id="about-tya">
+    <div class="about-tya">
+      <div class="about-tya-img">
+        <img src="img/support.jpg" alt="tya members" />
+      </div>
+      <div class="about-tya-info">
+        <h2>about together for youth</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-          dolores, numquam incidunt nam perferendis ea voluptas, autem vero
-          doloremque aperiam, laborum sint delectus sunt molestias quidem
-          aspernatur suscipit! Dignissimos, vitae.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
+          deleniti omnis aspernatur ducimus distinctio molestiae nihil neque
+          quibusdam dolor autem consectetur molestias enim possimus animi,
+          magnam rem suscipit ex quae.
+        </p>
+
+        <a href="about_us.html">
+          <button class="buttons-design">Learn more</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="events">
+    <div class="container-two">
+      <div class="event-content">
+        <h2 class="event-title">upcoming events</h2>
+
+        <div class="event-description">
+          <div class="event-dt">
+            <p>date</p>
+            <hr />
+            <p>month</p>
+            <p>year</p>
+          </div>
+          <div class="event-section">
+            <span>event date/time</span>
+            <h3><a class="event-heading" href="#">heading</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi quas temporibus illum iure perferendis ipsam
+              accusamus. Repudiandae voluptates expedita, libero illo fuga
+              nobis minima repellat sequi illum perferendis architecto facere?
+            </p>
+          </div>
+        </div>
+        <hr class="event-underline" />
+        <div class="event-description">
+          <div class="event-dt">
+            <p>date</p>
+            <hr />
+            <p>month</p>
+            <p>year</p>
+          </div>
+          <div class="event-section">
+            <span>event date/time</span>
+            <h3><a class="event-heading" href="#">heading</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi quas temporibus illum iure perferendis ipsam
+              accusamus. Repudiandae voluptates expedita, libero illo fuga
+              nobis minima repellat sequi illum perferendis architecto facere?
+            </p>
+          </div>
+        </div>
+        <hr class="event-underline" />
+        <div class="event-description">
+          <div class="event-dt">
+            <p>date</p>
+            <hr />
+            <p>month</p>
+            <p>year</p>
+          </div>
+          <div class="event-section">
+            <span>event date/time</span>
+            <h3><a class="event-heading" href="#">heading</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi quas temporibus illum iure perferendis ipsam
+              accusamus. Repudiandae voluptates expedita, libero illo fuga
+              nobis minima repellat sequi illum perferendis architecto facere?
+            </p>
+          </div>
+        </div>
+        <hr class="event-underline" />
+      </div>
+
+      <div class="gallery-content">
+        <div class="grid-gallery-container">
+          <div class="gallery-items one">
+            <a href="#gallery_item_5">
+              <img class="img" src="img/gallery/img20.jpg" alt="" />
+              <div class="overlay">
+                <img src="img/icons/transparency.png" alt="" />
+              </div>
+            </a>
+          </div>
+
+          <div class="gallery-items two">
+            <a href="#gallery_item_6">
+              <img class="img" src="img/thum/img27.jpg" alt="" />
+              <div class="overlay">
+                <img src="img/icons/transparency.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="gallery-items three">
+            <a href="#gallery_item_2">
+              <img class="img" src="img/thum/img9.jpg" alt="" />
+              <div class="overlay">
+                <img src="img/icons/transparency.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="gallery-items four">
+            <a href="#gallery_item_3">
+              <img class="img" src="img/thum/img11.jpg" alt="" />
+              <div class="overlay">
+                <img src="img/icons/transparency.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="gallery-items five">
+            <a href="#gallery_item_4">
+              <img class="img" src="img/thum/img16.jpg" alt="" />
+              <div class="overlay">
+                <img src="img/icons/transparency.png" alt="" />
+              </div>
+            </a>
+          </div>
+          <div class="gallery-items six">
+            <a href="#gallery_item_1">
+              <img class="img" src="img/thum/img4.jpg" alt="" />
+              <div class="overlay">
+                <img src="img/icons/transparency.png" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gallery_lightboxs">
+    <div id="gallery_item_1" class="gallery_lightbox">
+      <div class="gallery_lightbox_content">
+        <a href="#gallery-content" class="close"></a>
+        <img src="img/gallery/img4.jpg" alt="" />
+      </div>
+    </div>
+
+    <div id="gallery_item_2" class="gallery_lightbox">
+      <div class="gallery_lightbox_content">
+        <a href="#gallery-content" class="close"></a>
+        <img src="img/gallery/img9.jpg" alt="" />
+      </div>
+    </div>
+
+    <div id="gallery_item_3" class="gallery_lightbox">
+      <div class="gallery_lightbox_content">
+        <a href="#gallery-content" class="close"></a>
+        <img src="img/gallery/img11.jpg" alt="" />
+      </div>
+    </div>
+
+    <div id="gallery_item_4" class="gallery_lightbox">
+      <div class="gallery_lightbox_content">
+        <a href="#gallery-content" class="close"></a>
+        <img src="img/gallery/img16.jpg" alt="" />
+      </div>
+    </div>
+
+    <div id="gallery_item_5" class="gallery_lightbox">
+      <div class="gallery_lightbox_content">
+        <a href="#gallery-content" class="close"></a>
+        <img src="img/gallery/img20.jpg" alt="" />
+      </div>
+    </div>
+
+    <div id="gallery_item_6" class="gallery_lightbox">
+      <div class="gallery_lightbox_content">
+        <a href="#gallery-content" class="close"></a>
+        <img src="img/gallery/img27.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <section id="cta">
+    <div class="cta">
+      <div class="donate-info">
+        <div class="donate-info-top">
+          <h3 class="cta-header">donate now</h3>
+          <img class="icon" src="img/icons/donation.png" alt="" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+          molestiae obcaecati? Quo cumque a in excepturi praesentium,
+          reiciendis sit dolorem hic exercitationem ex, possimus quas quae.
+          Iste assumenda vitae nobis?
+        </p>
+      </div>
+      <a href="#">
+        <button class="buttons-design">donate now</button>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact-us">
+    <div class="contact-grid">
+      <div class="contact-us-info">
+        <h1 class="contact-title">get help</h1>
+        <p>
+          To get help on matters of sexual abuse, councling for victims of
+          sexual abuse or gender based violence you can contact us by clicking
+          on the numbers povided or through our e-mail.
+        </p>
+      </div>
+      <div class="contact-us-content">
+        <div class="contact-us-content-container">
+          <div class="contact-us-details">
+            <a class="contact-link" href="tel:+237672575713">
+              <i class="fa-solid fa-square-phone"> </i>(+237) 672575713</a>
+          </div>
+
+          <div class="contact-us-details">
+            <a class="contact-link" href="tel:676360925">
+              <i class="fa-solid fa-square-phone"> </i>(+237) 676 360 925</a>
+          </div>
+
+          <div class="contact-us-details">
+            <a class="contact-link" href="mailto:togetherforyouth@gmail.com? subject= Need Help">
+              <i class="fa-solid fa-envelope"></i>
+              togetherforyouth@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cta-two">
+    <div class="cta-two">
+      <div class="volunteer-header">
+        <div class="volunteer-header-top">
+          <h2 class="cta-two-header">Get Involved</h2>
+          <img class="icon" src="img/icons/support.png" alt="" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          eum dicta error sed quisquam quidem qui culpa repellendus
+          repudiandae
         </p>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <div class="top one">
-            <div class="icon">
-              <img src="img/icons/loudspeaker.png" alt="" />
-            </div>
-            <div class="header">
-              <h2>advocate</h2>
-            </div>
-          </div>
-          <div class="bottom one">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              eveniet atque suscipit itaque quas omnis alias numquam molestiae
-              voluptas. Temporibus quam quas maiores accusamus minus laborum
-              nulla fugiat natus sequi.
-            </p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="top two">
-            <div class="icon">
-              <img src="img/icons/meeting.png" alt="" />
-            </div>
-            <div class="header">
-              <h2>Counselling</h2>
-            </div>
-          </div>
-          <div class="bottom two">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              eveniet atque suscipit itaque quas omnis alias numquam molestiae
-              voluptas. Temporibus quam quas maiores accusamus minus laborum
-              nulla fugiat natus sequi.
-            </p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="top three">
-            <div class="icon">
-              <img class="icons" src="img/icons/unity.png" alt="" />
-            </div>
-            <div class="header">
-              <h2>comunity work</h2>
-            </div>
-          </div>
-          <div class="bottom three">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              eveniet atque suscipit itaque quas omnis alias numquam molestiae
-              voluptas. Temporibus quam quas maiores accusamus minus laborum
-              nulla fugiat natus sequi.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--   this sectioin contains code reference for the about us page   -->
-
-    <section id="about-tya">
-      <div class="about-tya">
-        <div class="about-tya-img">
-          <img src="img/support.jpg" alt="tya members" />
-        </div>
-        <div class="about-tya-info">
-          <h2>about together for youth</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-            deleniti omnis aspernatur ducimus distinctio molestiae nihil neque
-            quibusdam dolor autem consectetur molestias enim possimus animi,
-            magnam rem suscipit ex quae.
-          </p>
-
-          <a href="about_us.html">
-            <button class="buttons-design">Learn more</button>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="events">
-      <div class="container-two">
-        <div class="event-content">
-          <h2 class="event-title">upcoming events</h2>
-
-          <div class="event-description">
-            <div class="event-dt">
-              <p>date</p>
-              <hr />
-              <p>month</p>
-              <p>year</p>
-            </div>
-            <div class="event-section">
-              <span>event date/time</span>
-              <h3><a class="event-heading" href="#">heading</a></h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi quas temporibus illum iure perferendis ipsam
-                accusamus. Repudiandae voluptates expedita, libero illo fuga
-                nobis minima repellat sequi illum perferendis architecto facere?
-              </p>
-            </div>
-          </div>
-          <hr class="event-underline" />
-          <div class="event-description">
-            <div class="event-dt">
-              <p>date</p>
-              <hr />
-              <p>month</p>
-              <p>year</p>
-            </div>
-            <div class="event-section">
-              <span>event date/time</span>
-              <h3><a class="event-heading" href="#">heading</a></h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi quas temporibus illum iure perferendis ipsam
-                accusamus. Repudiandae voluptates expedita, libero illo fuga
-                nobis minima repellat sequi illum perferendis architecto facere?
-              </p>
-            </div>
-          </div>
-          <hr class="event-underline" />
-          <div class="event-description">
-            <div class="event-dt">
-              <p>date</p>
-              <hr />
-              <p>month</p>
-              <p>year</p>
-            </div>
-            <div class="event-section">
-              <span>event date/time</span>
-              <h3><a class="event-heading" href="#">heading</a></h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi quas temporibus illum iure perferendis ipsam
-                accusamus. Repudiandae voluptates expedita, libero illo fuga
-                nobis minima repellat sequi illum perferendis architecto facere?
-              </p>
-            </div>
-          </div>
-          <hr class="event-underline" />
-        </div>
-
-        <div class="gallery-content">
-          <div class="grid-gallery-container">
-            <div class="gallery-items one">
-              <a href="#gallery_item_5">
-                <img class="img" src="img/gallery/img20.jpg" alt="" />
-                <div class="overlay">
-                  <img src="img/icons/transparency.png" alt="" />
-                </div>
-              </a>
-            </div>
-
-            <div class="gallery-items two">
-              <a href="#gallery_item_6">
-                <img class="img" src="img/thum/img27.jpg" alt="" />
-                <div class="overlay">
-                  <img src="img/icons/transparency.png" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="gallery-items three">
-              <a href="#gallery_item_2">
-                <img class="img" src="img/thum/img9.jpg" alt="" />
-                <div class="overlay">
-                  <img src="img/icons/transparency.png" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="gallery-items four">
-              <a href="#gallery_item_3">
-                <img class="img" src="img/thum/img11.jpg" alt="" />
-                <div class="overlay">
-                  <img src="img/icons/transparency.png" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="gallery-items five">
-              <a href="#gallery_item_4">
-                <img class="img" src="img/thum/img16.jpg" alt="" />
-                <div class="overlay">
-                  <img src="img/icons/transparency.png" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="gallery-items six">
-              <a href="#gallery_item_1">
-                <img class="img" src="img/thum/img4.jpg" alt="" />
-                <div class="overlay">
-                  <img src="img/icons/transparency.png" alt="" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="gallery_lightboxs">
-      <div id="gallery_item_1" class="gallery_lightbox">
-        <div class="gallery_lightbox_content">
-          <a href="#events" class="close"></a>
-          <img src="img/gallery/img4.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="gallery_item_2" class="gallery_lightbox">
-        <div class="gallery_lightbox_content">
-          <a href="#events" class="close"></a>
-          <img src="img/gallery/img9.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="gallery_item_3" class="gallery_lightbox">
-        <div class="gallery_lightbox_content">
-          <a href="#events" class="close"></a>
-          <img src="img/gallery/img11.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="gallery_item_4" class="gallery_lightbox">
-        <div class="gallery_lightbox_content">
-          <a href="#events" class="close"></a>
-          <img src="img/gallery/img16.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="gallery_item_5" class="gallery_lightbox">
-        <div class="gallery_lightbox_content">
-          <a href="#events" class="close"></a>
-          <img src="img/gallery/img20.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="gallery_item_6" class="gallery_lightbox">
-        <div class="gallery_lightbox_content">
-          <a href="#events" class="close"></a>
-          <img src="img/gallery/img27.jpg" alt="" />
-        </div>
-      </div>
+      <a href="#">
+        <button class="buttons-design">Volunteer now</button>
+      </a>
     </div>
+  </section>
 
-    <section id="cta">
-      <div class="cta">
-        <div class="donate-info">
-          <div class="icon">
-            <img class="icons" src="img/icons/donation.png" alt="" />
-          </div>
-          <h3 class="cta-header">donate now</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-            molestiae obcaecati? Quo cumque a in excepturi praesentium,
-            reiciendis sit dolorem hic exercitationem ex, possimus quas quae.
-            Iste assumenda vitae nobis?
-          </p>
-        </div>
-        <a href="#">
-          <button class="buttons-design">donate now</button>
-        </a>
-      </div>
-    </section>
-    <section id="contact-us">
-      <div class="contact-grid">
-        <div class="contact-us-info">
-          <h1 class="contact-title">get help</h1>
-          <p>
-            To get help on matters of sexual abuse, councling for victims of
-            sexual abuse or gender based violence you can contact us by clicking
-            on the numbers povided or through our e-mail.
-          </p>
-        </div>
-        <div class="contact-us-content">
-          <div class="contact-us-content-container">
-            <div class="contact-us-details">
-              <a class="contact-link" href="tel:676360925">
-                <i class="fa-solid fa-square-phone"> </i>(+237) 676 360 925</a
-              >
-            </div>
-
-            <div class="contact-us-details">
-              <a class="contact-link" href="tel:676360925">
-                <i class="fa-solid fa-square-phone"> </i>(+237) 676 360 925</a
-              >
-            </div>
-
-            <div class="contact-us-details">
-              <a
-                class="contact-link"
-                href="mailto:togetherforyouth@gmail.com? subject= Need Help"
-              >
-                <i class="fa-solid fa-envelope"></i>
-                togetherforyouth@gmail.com</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="cta-two">
-      <div class="cta-two">
-        <div class="volunteer-header">
-          <div class="icon">
-            <img src="img/icons/support.png" alt="" />
-          </div>
-          <h2 class="cta-two-header">Get Involved</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-            eum dicta error sed quisquam quidem qui culpa repellendus
-            repudiandae
-          </p>
-        </div>
-
-        <a href="#">
-          <button class="buttons-design">Volunteer now</button>
-        </a>
-      </div>
-    </section>
-
-    <!-- 
+  <!-- 
     <section id="news">
         <div class="news-updates">
             <div class="news">
@@ -509,84 +485,95 @@
             </div>
         </div>
     </section> -->
+  <!-- back to top button -->
+  <div class="bk-to-top">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg id="back-to-top" data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #259b48;
+            }
+          </style>
+        </defs>
+        <path class="cls-1"
+          d="M315.86,315.48a15,15,0,1,0,15,15A15,15,0,0,0,315.86,315.48Zm6.45,22H309.06a1.06,1.06,0,0,1-.91-1.61l7.42-12.41a.74.74,0,0,1,1.29,0L323.21,336A1,1,0,0,1,322.31,337.5Z"
+          transform="translate(-300.86 -315.48)" />
+      </svg></button>
+  </div>
 
-    <!-- footer section and all the code involved in it  -->
+  <!-- footer section and all the code involved in it  -->
 
-    <section id="footer">
-      <footer class="footer-container">
-        <div class="footer-logo">
-          <img src="img/logo.svg" alt="TYA-LOGO" />
-        </div>
+  <section id="footer">
+    <footer class="footer-container">
+      <div class="footer-logo footer footer-one">
+        <img src="img/logo.svg" alt="TYA-LOGO" />
+      </div>
 
-        <div class="footer-container-contact">
-          <h2 class="footer-header">Call our helpline</h2>
-          <div class="footer-container-contact contact-details">
-            <a class="footer-contact-link" href="tel:676360925">
-              <i class="fa-solid fa-square-phone"> </i>(+237) 676 360 925</a
-            >
-            <a class="footer-contact-link" href="tel:676360925">
-              <i class="fa-solid fa-square-phone"> </i>(+237) 676 360 925</a
-            >
-            <a
-              class="footer-contact-link"
-              href="mailto:togetherforyouth@gmail.com? subject= Need Help"
-            >
-              <i class="fa-solid fa-envelope"></i> togetherforyouth@gmail.com</a
-            >
-          </div>
+      <div class="footer-container-contact footer footer-two">
+        <h2 class="footer-header">Call our helpline</h2>
+        <div class="footer-container-contact contact-details">
+          <a class="footer-contact-link" href="tel:676360925">
+            <i class="fa-solid fa-square-phone"> </i>(+237) 676 360 925</a>
+          <a class="footer-contact-link" href="tel:676360925">
+            <i class="fa-solid fa-square-phone"> </i>(+237) 676 360 925</a>
+          <a class="footer-contact-link" href="mailto:togetherforyouth@gmail.com? subject= Need Help">
+            <i class="fa-solid fa-envelope"></i> togetherforyouth@gmail.com</a>
         </div>
-        <div class="footer__nav">
-          <h2 class="footer-header">Explore</h2>
-          <ul class="footer__nav__list">
-            <li class="footer__nav__item">
-              <a href="#" class="footer__nav__link">home</a>
-            </li>
-            <li class="footer__nav__item">
-              <a href="#" class="footer__nav__link">about us</a>
-            </li>
-            <li class="footer__nav__item">
-              <a href="#" class="footer__nav__link">activities</a>
-            </li>
-            <li class="footer__nav__item">
-              <a href="#" class="footer__nav__link">get involved</a>
-            </li>
-            <li class="footer__nav__item">
-              <a href="#" class="footer__nav__link">contact us</a>
-            </li>
-          </ul>
-        </div>
-        <div class="social">
-          <h2 class="footer-header">join us</h2>
-          <div class="socials_grid">
-            <div class="socials">
-              <div class="socials_logo">
-                <a href="">
-                  <img src="img/icons/facebook-logo.png" alt="" />
-                </a>
-              </div>
-              <div class="socials_icon">
-                <a href="">
-                  <img src="img/icons/facebook.png" alt="" />
-                </a>
-              </div>
+      </div>
+      <div class="footer__nav footer footer-three">
+        <h2 class="footer-header">Explore</h2>
+        <ul class="footer__nav__list">
+          <li class="footer__nav__item">
+            <a href="index.html" class="footer__nav__link">home</a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="about_us.html" class="footer__nav__link">about us</a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="activities.html" class="footer__nav__link">activities</a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="get_involved.html" class="footer__nav__link">get involved</a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="contact_us.html" class="footer__nav__link">contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social footer footer-four">
+        <h2 class="footer-header">join us</h2>
+        <div class="socials_grid">
+          <div class="socials">
+            <div class="socials_logo">
+              <a href="https://www.facebook.com/together4youths/" target="_blank"">
+                  <img src=" img/icons/facebook-logo.png" alt="" />
+              </a>
             </div>
-            <div class="socials">
-              <div class="socials_logo">
-                <a href="">
-                  <img src="img/icons/phone.png" alt="" />
-                </a>
-              </div>
-              <div class="socials_icon">
-                <a href="">
-                  <img src="img/icons/whatsapp.png" alt="" />
-                </a>
-              </div>
+            <div class="socials_icon">
+              <a href="https://www.facebook.com/together4youths/" target="_blank">
+                <img src="img/icons/facebook.png" alt="" />
+              </a>
             </div>
           </div>
+          <div class="socials">
+            <div class="socials_logo">
+              <a href="https://chat.whatsapp.com/GVFeBvxEwLvDzZloAhagPH" target="_blank">
+                <img src="img/icons/phone.png" alt="" />
+              </a>
+            </div>
+            <div class="socials_icon">
+              <a href="https://chat.whatsapp.com/GVFeBvxEwLvDzZloAhagPH" target="_blank">
+                <img src="img/icons/whatsapp.png" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
-      </footer>
-    </section>
+      </div>
+    </footer>
+  </section>
 
-    <script src="js/script.js"></script>
-  </body>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

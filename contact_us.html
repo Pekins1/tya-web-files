@@ -40,6 +40,7 @@
     <!-- styling -->
     <link rel="stylesheet" href="css/style-second.css" />
     <title>TYA Association</title>
+    <link rel="icon" type="image/png" href="/img/favicon/favicon.png" />
   </head>
 
   <body>
@@ -49,21 +50,26 @@
           <img class="filter_image" src="img/logo.svg" alt="TYA-LOGO" />
           <a href="#" class="nav__logo"
             ><strong>t</strong>ogether <span>for</span> <strong>y</strong>outh
-            <strong>a</strong>ssociation</a
-          >
+            <strong>a</strong>ssociation
+          </a>
         </div>
+        <a href="#" class="toggle_button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
         <div class="content content_primary">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="index.html" class="nav__link">home</a>
             </li>
             <li class="nav__item dropdown">
-              <a href="about_us.html" class="nav__link"
+              <a href="#" class="nav__link"
                 >about us<i class="fa-solid fa-caret-down"></i
               ></a>
               <ul class="dropdown-item">
                 <li class="dropdown-list">
-                  <a href="about_us.html" class="dropdown-link">who we are</a>
+                  <a href="who_we_are.html" class="dropdown-link">who we are</a>
                 </li>
                 <li class="dropdown-list">
                   <a href="how_we_help.html" class="dropdown-link"
@@ -82,7 +88,7 @@
               <a href="activities.html" class="nav__link">activities</a>
             </li>
             <li class="nav__item dropdown">
-              <a href="get_involved.html" class="nav__link"
+              <a href="#" class="nav__link"
                 >get involved<i class="fa-solid fa-caret-down"></i
               ></a>
               <ul class="dropdown-item two">
@@ -90,7 +96,7 @@
                   <a href="donate.html" class="dropdown-link">Donate</a>
                 </li>
                 <li class="dropdown-list">
-                  <a href="volunteer.html" class="dropdown-link">Volunteer</a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvUD2AS1Q9hMZrSY0LtFDRncGkT2VNRedPJLKKDaBfngc7Sg/viewform?usp=sf_link" class="dropdown-link">Volunteer</a>
                 </li>
               </ul>
             </li>
@@ -121,8 +127,8 @@
     </section>
 
     <section id=" contacts">
-      <div class="contacts">
-        <div class="side-note">
+      <div class="contacts-page">
+        <div class="side-note contact-one">
           <form>
             <h1 class="contact-header">Get In Touch</h1>
             <div class="name-field">
@@ -147,7 +153,7 @@
           </form>
         </div>
 
-        <div class="contact-information">
+        <div class="contact-information contact-two">
           <div class="contact-information-header">
             <h1>TYA National Online and Telephone Counseling</h1>
           </div>
@@ -189,61 +195,84 @@
             </div>
           </div>
         </div>
+
+        <!-- maps section -->
+        <iframe class="maps contact-three" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15923.443943208118!2d11.479809533954922!3d3.8400046648928843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcfcfba91be3b%3A0x3eb618bb8fc3a303!2sBiyem-Assi%2C%20Yaound%C3%A9%2C%20Cameroon!5e0!3m2!1sen!2sus!4v1663344215518!5m2!1sen!2sus" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+
+      
+      
     </section>
 
     <section id="footer">
       <footer class="footer-container">
-        <div class="footer-logo">
+        <div class="footer-logo footer footer-one">
           <img src="img/logo.svg" alt="TYA-LOGO" />
         </div>
-
-        <div class="footer-container-contact">
+  
+        <div class="footer-container-contact footer footer-two">
           <h2 class="footer-header">Call our helpline</h2>
           <div class="footer-container-contact contact-details">
             <a class="footer-contact-link" href="tel:676360925">
-              <i class="fa-solid fa-square-phone"> </i>(+237) 676 360 925</a
-            >
+              <i class="fa-solid fa-square-phone"> </i>(+237) 676 360 925</a>
             <a class="footer-contact-link" href="tel:676360925">
-              <i class="fa-solid fa-square-phone"> </i>(+237) 676 360 925</a
-            >
-            <a
-              class="footer-contact-link"
-              href="mailto:togetherforyouth@gmail.com? subject= Need Help"
-            >
-              <i class="fa-solid fa-envelope"></i> togetherforyouth@gmail.com</a
-            >
+              <i class="fa-solid fa-square-phone"> </i>(+237) 676 360 925</a>
+            <a class="footer-contact-link" href="mailto:togetherforyouth@gmail.com? subject= Need Help">
+              <i class="fa-solid fa-envelope"></i> togetherforyouth@gmail.com</a>
           </div>
         </div>
-        <div class="footer__nav">
+        <div class="footer__nav footer footer-three">
           <h2 class="footer-header">Explore</h2>
           <ul class="footer__nav__list">
             <li class="footer__nav__item">
-              <a href="#" class="footer__nav__link">home</a>
+              <a href="index.html" class="footer__nav__link">home</a>
             </li>
             <li class="footer__nav__item">
-              <a href="#" class="footer__nav__link">about us</a>
+              <a href="about_us.html" class="footer__nav__link">about us</a>
             </li>
             <li class="footer__nav__item">
-              <a href="#" class="footer__nav__link">activities</a>
+              <a href="activities.html" class="footer__nav__link">activities</a>
             </li>
             <li class="footer__nav__item">
-              <a href="#" class="footer__nav__link">get involved</a>
+              <a href="get_involved.html" class="footer__nav__link">get involved</a>
             </li>
             <li class="footer__nav__item">
-              <a href="#" class="footer__nav__link">contact us</a>
+              <a href="contact_us.html" class="footer__nav__link">contact us</a>
             </li>
           </ul>
         </div>
-        <div class="social">
+        <div class="social footer footer-four">
           <h2 class="footer-header">join us</h2>
           <div class="socials_grid">
             <div class="socials">
-              <div class="socials_logo"></div>
+              <div class="socials_logo">
+                <a href="https://www.facebook.com/together4youths/" target="_blank"">
+                    <img src=" img/icons/facebook-logo.png" alt="" />
+                </a>
+              </div>
+              <div class="socials_icon">
+                <a href="https://www.facebook.com/together4youths/" target="_blank">
+                  <img src="img/icons/facebook.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="socials">
+              <div class="socials_logo">
+                <a href="https://chat.whatsapp.com/GVFeBvxEwLvDzZloAhagPH" target="_blank">
+                  <img src="img/icons/phone.png" alt="" />
+                </a>
+              </div>
+              <div class="socials_icon">
+                <a href="https://chat.whatsapp.com/GVFeBvxEwLvDzZloAhagPH" target="_blank">
+                  <img src="img/icons/whatsapp.png" alt="" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </footer>
     </section>
+  
+    <script src="js/script.js"></script>
   </body>
 </html>
