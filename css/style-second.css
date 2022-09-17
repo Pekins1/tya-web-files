@@ -309,7 +309,7 @@ p {
 .banner {
   height: 40vh;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(13, 128, 70);
   color: #fff;
   text-align: center;
   display: grid;
@@ -933,7 +933,7 @@ form button:hover {
 *********************/
 
 #footer {
-  background-color: rgba(159, 238, 163, 0.9);
+  background-color: rgba(103, 170, 106, 0.9);
 }
 
 .footer-logo {
