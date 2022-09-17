@@ -195,7 +195,10 @@ p {
   background: var(--background);
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
-
+.dropdown-item a {
+  text-decoration: none;
+  color: inherit;
+}
 .dropdown-item.two {
   height: 120px;
 }
@@ -222,7 +225,7 @@ p {
 }
 
 .dropdown:hover .dropdown-item {
-  display: block;
+  display: inline-block;
 }
 
 @media (max-width: 1300px) {
@@ -1138,6 +1141,7 @@ all the buttons in the home page ********/
   flex-direction: column;
   padding: 4rem 1rem;
   margin: 0 6rem;
+  border-radius: 10px;
 }
 .donate-info-top {
   display: flex;
@@ -1294,6 +1298,7 @@ all the buttons in the home page ********/
   flex-direction: column;
   padding: 4rem 1rem;
   margin: 0 6rem;
+  border-radius: 10px;
 }
 
 .volunteer-header-top {
