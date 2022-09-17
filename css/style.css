@@ -56,7 +56,7 @@ p {
   display: flex;
   justify-content: space-between;
   flex-direction: rows;
-  padding: 1em 6em;
+  padding: 1rem 6rem;
   width: 100vw;
   color: var(--text);
   transition: background 250ms ease-in;
@@ -291,9 +291,23 @@ p {
   }
 }
 @media (max-width: 500px) {
+  .nav {
+    padding-bottom: 0;
+  }
   .nav__logo {
     font-size: 1rem;
     line-height: 1;
+  }
+  .nav .content_primary {
+    justify-content: flex-start;
+    margin-left: 2.8rem;
+  }
+  .nav .contact_wrapper {
+    justify-content: flex-start;
+  }
+
+  .nav__item {
+    padding: 1rem 0;
   }
 }
 

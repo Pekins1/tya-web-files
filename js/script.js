@@ -85,14 +85,21 @@ sectionOneObserver.observe(sectionOne);
 
 // nav responsive
 
-const toggleButton = document.getElementsByClassName("toggle_button")[0];
-const navbarLinks = document.getElementsByClassName("nav__list")[0];
-const navContacts = document.getElementsByClassName("nav_contact")[0];
+const toggleButton = document.querySelector(".toggle_button");
+const navbarLinks = document.querySelector(".nav__list");
+const navContacts = document.querySelector(".nav_contact");
 
 toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
   navContacts.classList.toggle("active");
 });
+
+document.querySelectorAll(".nav__link").forEach((n) =>
+  n.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+    navContacts.classList.toggle("active");
+  })
+);
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
