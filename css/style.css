@@ -225,7 +225,7 @@ p {
 }
 
 .dropdown:hover .dropdown-item {
-  display: inline-block;
+  display: block;
 }
 
 @media (max-width: 1300px) {
