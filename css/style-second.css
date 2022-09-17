@@ -366,7 +366,7 @@ p {
 
 .about_tya p {
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 8rem;
 }
 
 .about_us_grid {
@@ -392,10 +392,18 @@ p {
     padding: 20px 10px;
     text-align: center;
   }
-  .about_us_grid {
+  .about_tya p {
     padding: 1rem;
   }
+  .about_us_grid {
+    padding: 1rem;
+    text-align: center;
+  }
+  .about_us_grid .goal p {
+    text-align: left;
+  }
 }
+
 @media (max-width: 570px) {
   .about_tya h2 {
     padding: 20px 5px;

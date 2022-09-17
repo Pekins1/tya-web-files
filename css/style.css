@@ -759,6 +759,7 @@ p {
   font-size: 1.3rem;
   line-height: 1.5;
   padding-bottom: 2rem;
+  padding-right: 15em;
 }
 
 /****************** this button design affects 
@@ -784,6 +785,11 @@ all the buttons in the home page ********/
   box-shadow: 0 8px 14px rgba(0, 0, 0, 0.9);
 }
 
+@media (max-width: 1500px) {
+  .about-tya-info p {
+    padding-right: 6rem;
+  }
+}
 @media (max-width: 1155px) {
   .about-tya {
     margin: 0 2rem;
@@ -791,6 +797,9 @@ all the buttons in the home page ********/
 
   .about-tya-info h2 {
     text-align: center;
+  }
+  .about-tya-info p {
+    padding-right: 0;
   }
 
   .about-tya-info .buttons-design {
@@ -805,6 +814,9 @@ all the buttons in the home page ********/
 
   .about-tya-info h2 {
     margin-bottom: 1rem;
+  }
+  .about-tya-info p {
+    text-align: left;
   }
 
   .about-tya-img {
