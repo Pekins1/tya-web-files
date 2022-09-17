@@ -1410,7 +1410,7 @@ all the buttons in the home page ********/
 
 .footer-contact-link {
   padding-top: 1rem;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1425,7 +1425,7 @@ all the buttons in the home page ********/
 .footer__nav__link {
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
 }
 
 .socials_grid {
