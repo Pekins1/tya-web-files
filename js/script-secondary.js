@@ -124,13 +124,6 @@ toggleButton.addEventListener("click", () => {
   navContacts.classList.toggle("active");
 });
 
-document.querySelectorAll(".nav__link").forEach((n) =>
-  n.addEventListener("click", () => {
-    navbarLinks.classList.toggle("active");
-    navContacts.classList.toggle("active");
-  })
-);
-
 mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button

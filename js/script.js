@@ -94,13 +94,6 @@ toggleButton.addEventListener("click", () => {
   navContacts.classList.toggle("active");
 });
 
-document.querySelectorAll(".nav__link").forEach((n) =>
-  n.addEventListener("click", () => {
-    navbarLinks.classList.toggle("active");
-    navContacts.classList.toggle("active");
-  })
-);
-
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
