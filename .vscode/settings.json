@@ -1,4 +1,3 @@
 {
-    "liveServer.settings.port": 5501,
-    "php.validate.executablePath": "D:/XAMPP/php/php.exe"
+  "editor.linkedEditing": true
 }
